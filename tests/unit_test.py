@@ -579,7 +579,7 @@ def test_cluster_uris(mocker):
     mocker.patch(
         "kubernetes.client.NetworkingV1Api.list_namespaced_ingress",
         return_value=ingress_retrieval(
-            port=8265, annotations={"route.openshift.io/termination": "passthrough"}
+            port=8265, annotations={"route.openshift.io/termination": "reencrypt"}
         ),
     )
     assert (
