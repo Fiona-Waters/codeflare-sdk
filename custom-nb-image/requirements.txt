@@ -48,7 +48,7 @@ defusedxml==0.7.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 
 distlib==0.3.6
 entrypoints==0.4; python_version >= '3.6'
 executing==1.1.0
-fastapi==0.85.0
+fastapi==0.109.1
 fastjsonschema==2.16.2
 filelock==3.8.0; python_version >= '3.7'
 flatbuffers==22.9.24
