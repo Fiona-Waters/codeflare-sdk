@@ -8,7 +8,9 @@ from codeflare_sdk.utils.kube_api_helpers import _kube_api_error_handling
 
 
 def get_ray_image():
-    default_ray_image = "quay.io/modh/ray@sha256:8b9e0efa3ae0e1862d66c02ffa82b80830334a5f8af12deb96d4f2f8babce5fe"
+    default_ray_image = (
+        "quay.io/modh/ray:2.35.0-py39-cu121-b87d9a71c34c0b79c0e7aa9d4245fe7f0065f774"
+    )
     return os.getenv("RAY_IMAGE", default_ray_image)
 
 
